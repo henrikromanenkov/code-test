@@ -1,0 +1,24 @@
+.users-page {
+  min-width: 50rem;
+
+  .users-header {
+    display: flex;
+    flex-direction: row;
+
+    .new-user-button {
+      background: green;
+
+      &:hover {
+        background: lightgreen;
+      }
+    }
+  }
+}
+
+.users-list {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 3rem 0;
+  gap: 1rem;
+}

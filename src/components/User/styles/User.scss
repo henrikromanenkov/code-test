@@ -1,0 +1,35 @@
+.user {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  min-width: 40rem;
+
+  &:not(:last-child)::after {
+    content: '';
+    height: 0.1rem;
+    border-radius: 999px;
+    width: 100px;
+    opacity: 0.5;
+    background: black;
+    flex-basis: 100%;
+  }
+
+  img {
+    background: #242424;
+    height: 6rem;
+    width: 6rem;
+    align-items: center;
+    border-radius: 999px;
+  }
+
+  .user-data {
+    display: flex;
+    flex-direction: column;
+
+    .data-value {
+      font-weight: bold;
+    }
+  }
+}
